@@ -67,7 +67,7 @@
                 android:layout_height="50sp"
                 android:text="@string/contribute_button"
                 android:id="@+id/general_action_button"
-                android:background="#E65100"
+                android:background="#0091EA"
                 android:layout_gravity="bottom" />
 
         </LinearLayout>

@@ -7,8 +7,8 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
+        android:layout_height="464dp"
+        android:layout_gravity="top|center"
         android:weightSum="1">
 
         <LinearLayout
@@ -25,7 +25,8 @@
                 android:layout_gravity="center_horizontal"
                 android:textStyle="bold"
                 android:textSize="30sp"
-                android:gravity="center_vertical|center_horizontal" />
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_margin="5sp" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -34,7 +35,8 @@
                 android:text="@string/pool_example_description"
                 android:id="@+id/idea_description"
                 android:layout_gravity="center_horizontal"
-                android:maxHeight="75dp" />
+                android:maxHeight="75dp"
+                android:layout_margin="5sp" />
 
             <TextView
                 android:layout_width="match_parent"
