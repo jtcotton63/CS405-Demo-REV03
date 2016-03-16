@@ -14,4 +14,17 @@
         completions."
     </string>
     <string name="vb_logo">V | B</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pool_example_description">The pool is only open until Saturday at noon. This makes it really inconvenient for some of us to ever use it, because we are never available when it is open. We would like the city to extend the pool hours so that it doesn't close until Saturday evening.</string>
+    <string name="pool_example_title">Open rec center swimming pool on Saturday evenings</string>
+    <string name="expand_description_icon">+</string>
+    <string name="picture_description">Profile picture of the commenter</string>
+    <string name="jimmers_comment">I think that\'s a great idea! Saturday evenings are the only time I can take my kids to play in the pool.</string>
+    <string name="jimmer_name">Jimmer Fredette</string>
+    <string name="donalds_comment">Oh boy oh boy oh boy! Daisy and I love any chance to play in the water more!</string>
+    <string name="donald_name">Donald Duck</string>
+    <string name="plus_one">+1</string>
+    <string name="share_button_name">Share an idea</string>
 </resources>
