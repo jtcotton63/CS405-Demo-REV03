@@ -168,7 +168,7 @@
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@string/share_button_name"
+            android:text="@string/share_button"
             android:id="@+id/general_action_button"
             android:layout_weight="1.14"
             android:background="#757575" />
