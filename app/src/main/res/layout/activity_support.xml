@@ -18,7 +18,8 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:weightSum="1" >
+            android:weightSum="1"
+            android:layout_marginTop="20sp">
 
             <RadioButton
                 android:layout_width="wrap_content"
@@ -49,15 +50,26 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Name on credit card"
+            android:ems="10"
+            android:id="@+id/name_on_credit_card_input"
+            android:layout_marginTop="20sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:inputType="number"
             android:ems="10"
             android:id="@+id/cc_number_input"
-            android:text="Credit card number" />
+            android:text="Credit card number"
+            android:layout_marginTop="20sp" />
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp">
 
             <EditText
                 android:layout_width="wrap_content"
@@ -84,7 +96,8 @@
             android:inputType="number"
             android:ems="10"
             android:id="@+id/cc_verification_code"
-            android:text="Verification code" />
+            android:text="Verification code"
+            android:layout_marginTop="20sp" />
 
         <EditText
             android:layout_width="wrap_content"
@@ -92,7 +105,8 @@
             android:inputType="numberDecimal"
             android:ems="10"
             android:id="@+id/donation_amount_input"
-            android:text="Donation amount" />
+            android:text="Donation amount"
+            android:layout_marginTop="20sp" />
 
     </LinearLayout>
     <LinearLayout
