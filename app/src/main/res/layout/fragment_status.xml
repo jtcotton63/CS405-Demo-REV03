@@ -1,0 +1,266 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.josepher.voicebox.StatusFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="@dimen/bottom_button_bar_height">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="January 31, 2016"
+            android:id="@+id/textView2"
+            android:paddingBottom="5sp"
+            android:paddingLeft="10sp"
+            android:paddingTop="5sp"
+            android:paddingRight="10sp"
+            android:background="#f5f5f5"
+            android:textColor="#757575"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="1"
+            android:minHeight="65dp"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:paddingBottom="10sp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:foregroundGravity="fill_vertical"
+                android:weightSum="1">
+
+                <ImageButton
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:id="@+id/creator_image"
+                    android:contentDescription="@string/picture_description" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Idea proposed by Pete BarnCat"
+                    android:id="@+id/comment"
+                    android:gravity="center_vertical|center_horizontal" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="February 2, 2016"
+            android:id="@+id/textView3"
+            android:paddingBottom="5sp"
+            android:paddingLeft="10sp"
+            android:paddingTop="5sp"
+            android:paddingRight="10sp"
+            android:background="#f5f5f5"
+            android:textColor="#757575"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="1"
+            android:minHeight="65dp"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:paddingBottom="10sp" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:foregroundGravity="fill_vertical"
+                android:weightSum="1" >
+
+                <ImageButton
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:id="@+id/imageButton"
+                    android:contentDescription="@string/picture_description" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Idea reached 1,000 In-Favor-Ofs"
+                    android:id="@+id/textView4"
+                    android:gravity="center_vertical|center_horizontal" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="1"
+            android:minHeight="65dp"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:paddingBottom="10sp" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:foregroundGravity="fill_vertical"
+                android:weightSum="1" >
+
+                <ImageButton
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:id="@+id/imageButton3"
+                    android:contentDescription="@string/picture_description" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Official recognition gained"
+                    android:id="@+id/textView6"
+                    android:gravity="center_vertical|center_horizontal" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="1"
+            android:minHeight="65dp"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:paddingBottom="10sp" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:foregroundGravity="fill_vertical"
+                android:weightSum="1" >
+
+                <ImageButton
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:id="@+id/imageButton2"
+                    android:contentDescription="@string/picture_description" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="I&apos;ll bring this up in city council this upcoming week."
+                    android:id="@+id/comment" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Somebody&apos;s Name, Provo Mayor"
+                    android:id="@+id/commenterName"
+                    android:layout_gravity="center_horizontal"
+                    android:minHeight="20dp"
+                    android:minLines="1"
+                    android:maxHeight="20dp"
+                    android:gravity="center_vertical|right" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="February 6, 2016"
+            android:id="@+id/textView5"
+            android:paddingBottom="5sp"
+            android:paddingLeft="10sp"
+            android:paddingTop="5sp"
+            android:paddingRight="10sp"
+            android:background="#f5f5f5"
+            android:textColor="#757575"
+            android:gravity="center_vertical|center_horizontal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom" >
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:id="@+id/button"
+            android:background="#64DD17" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/share_button"
+            android:id="@+id/button2"
+            android:layout_weight="1.14"
+            android:background="#757575" />
+
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:id="@+id/button3"
+            android:background="#E65100" />
+    </LinearLayout>
+
+</FrameLayout>

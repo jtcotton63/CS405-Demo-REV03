@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.josepher.voicebox.CreateActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="@dimen/bottom_button_bar_height">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/idea_summary_input"
+            android:text="Please enter a summary of your idea"
+            android:textStyle="bold"
+            android:textSize="25sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/idea_description_input"
+            android:text="Please enter a detailed description of your proposed idea."
+            android:selectAllOnFocus="false"
+            android:layout_marginBottom="@dimen/bottom_button_bar_height" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/radioGroup"
+            android:layout_weight="0.65">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="City of Provo"
+                android:id="@+id/city_scope_radio_button"
+                android:layout_weight=".33"
+                android:gravity="center_vertical"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Utah County"
+                android:id="@+id/county_scope_radio_button"
+                android:layout_weight=".33"
+                android:gravity="center_vertical"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="State of Utah"
+                android:id="@+id/state_scope_radio_button"
+                android:layout_weight=".33"
+                android:gravity="center_vertical"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="University"
+                android:id="@+id/university_scope_radio_button"
+                android:layout_weight=".33"
+                android:gravity="center_vertical"
+                android:checked="false" />
+        </RadioGroup>
+
+        <Spinner
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/university_dropdown"
+            android:layout_gravity="right"
+            android:spinnerMode="dropdown" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:weightSum="1"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Share your idea"
+            android:id="@+id/create_idea_button"
+            android:background="#64DD17"
+            android:layout_gravity="bottom" />
+
+    </LinearLayout>
+
+</RelativeLayout>
