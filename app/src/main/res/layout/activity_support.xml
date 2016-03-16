@@ -12,7 +12,8 @@
         android:layout_height="fill_parent"
         android:weightSum="1"
         android:layout_alignParentTop="true"
-        android:layout_marginBottom="@dimen/bottom_button_bar_height">
+        android:layout_marginBottom="@dimen/bottom_button_bar_height"
+        android:id="@+id/linearLayout4">
 
         <LinearLayout
             android:orientation="horizontal"
@@ -21,29 +22,37 @@
             android:weightSum="1"
             android:layout_marginTop="20sp">
 
-            <RadioButton
-                android:layout_width="wrap_content"
+            <RadioGroup
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="VISA"
-                android:id="@+id/visa_button"
-                android:layout_weight=".33"
-                android:gravity="center_vertical" />
+                android:orientation="horizontal"
+                android:id="@+id/cc_radio_group">
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="MasterCard"
-                android:id="@+id/mastercard_button"
-                android:layout_weight=".33"
-                android:gravity="center_vertical" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VISA"
+                    android:id="@+id/visa_button"
+                    android:layout_weight=".33"
+                    android:gravity="center_vertical" />
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Discover"
-                android:id="@+id/discover_button"
-                android:layout_weight=".33"
-                android:gravity="center_vertical" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MasterCard"
+                    android:id="@+id/mastercard_button"
+                    android:layout_weight=".33"
+                    android:gravity="center_vertical" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Discover"
+                    android:id="@+id/discover_button"
+                    android:layout_weight=".33"
+                    android:gravity="center_vertical" />
+
+            </RadioGroup>
 
         </LinearLayout>
 
@@ -126,4 +135,10 @@
             android:layout_gravity="bottom" />
 
     </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/linearLayout4"></RadioGroup>
 </RelativeLayout>

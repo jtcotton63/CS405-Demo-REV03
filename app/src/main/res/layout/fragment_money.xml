@@ -5,18 +5,36 @@
     tools:context="com.josepher.voicebox.MoneyFragment">
 
     <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:text="@string/contribute_button"
+            android:id="@+id/general_action_button"
+            android:background="#0091EA"
+            android:layout_gravity="bottom" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
-        android:weightSum="1">
+        android:weightSum="1"
+        android:paddingBottom="@dimen/bottom_button_bar_height">
 
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:weightSum="1"
-            android:layout_weight=".9">
+            android:layout_marginBottom="@dimen/bottom_button_bar_height">
 
             <TextView
                 android:layout_width="match_parent"
@@ -34,11 +52,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="$456.50"
-                android:id="@+id/textView2"
+                android:text="$1100.26"
+                android:id="@+id/money_raised_display"
                 android:gravity="center_vertical|center_horizontal"
                 android:textStyle="bold"
-                android:textSize="100dp" />
+                android:textSize="80dp" />
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -46,29 +64,11 @@
                 android:layout_height="fill_parent">
 
                 <ImageView
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:id="@+id/imageView"
-                    android:layout_weight=".5"
                     android:src="@drawable/MoneyRaisedOverTime" />
             </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:weightSum="1">
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="50sp"
-                android:text="@string/contribute_button"
-                android:id="@+id/general_action_button"
-                android:background="#0091EA"
-                android:layout_gravity="bottom" />
 
         </LinearLayout>
 
