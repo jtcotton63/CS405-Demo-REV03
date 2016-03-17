@@ -2,7 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.josepher.voicebox.SummaryFragment">
+    tools:context="com.josepher.voicebox.SummaryFragment"
+    android:paddingTop="@dimen/bottom_button_bar_height">
 
     <LinearLayout
         android:orientation="vertical"

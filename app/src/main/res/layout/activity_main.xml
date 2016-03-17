@@ -9,48 +9,102 @@
     android:paddingTop="0dp"
     tools:context="com.josepher.voicebox.MainActivity">
 
-    <TabHost
+    <!--<TabHost-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:id="@+id/tabHost"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<TabWidget-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:tabStripEnabled="false"-->
+                <!--android:nestedScrollingEnabled="false"-->
+                <!--android:orientation="vertical"></TabWidget>-->
+
+            <!--<FrameLayout-->
+                <!--android:id="@android:id/tabcontent"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/linearLayout"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:orientation="vertical"></LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/linearLayout2"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:orientation="vertical"></LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/linearLayout3"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:orientation="vertical"></LinearLayout>-->
+            <!--</FrameLayout>-->
+        <!--</LinearLayout>-->
+    <!--</TabHost>-->
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/tabHost"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true">
+        android:layout_height="77sp"
+        android:id="@+id/menu"
+        android:layout_alignParentStart="false">
 
         <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="65sp">
 
-            <TabWidget
-                android:layout_width="match_parent"
+            <ImageButton
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:id="@+id/action_items_button"
+                android:contentDescription="@string/picture_description" />
+
+            <ImageButton
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:id="@+id/locality_change_left_button"
+                android:contentDescription="@string/picture_description" />
+
+            <TextView
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:tabStripEnabled="false"
-                android:nestedScrollingEnabled="false"
-                android:orientation="vertical"></TabWidget>
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="United States of America"
+                android:id="@+id/locality_title_view"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_gravity="center"
+                android:layout_weight=".5" />
 
-            <FrameLayout
-                android:id="@android:id/tabcontent"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+            <ImageButton
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:id="@+id/locality_change_right_button"
+                android:contentDescription="@string/picture_description" />
 
-                <LinearLayout
-                    android:id="@+id/linearLayout"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"></LinearLayout>
+            <ImageButton
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:id="@+id/menu_button"
+                android:contentDescription="@string/picture_description" />
 
-                <LinearLayout
-                    android:id="@+id/linearLayout2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"></LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/linearLayout3"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"></LinearLayout>
-            </FrameLayout>
         </LinearLayout>
-    </TabHost>
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar" />
+    </LinearLayout>
 </RelativeLayout>
