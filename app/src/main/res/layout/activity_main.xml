@@ -7,7 +7,8 @@
     android:paddingLeft="0dp"
     android:paddingRight="0dp"
     android:paddingTop="0dp"
-    tools:context="com.josepher.voicebox.MainActivity">
+    tools:context="com.josepher.voicebox.MainActivity"
+    android:background="#424242">
 
     <!--<TabHost-->
         <!--android:layout_width="match_parent"-->
@@ -69,13 +70,19 @@
                 android:layout_width="65dp"
                 android:layout_height="65dp"
                 android:id="@+id/action_items_button"
-                android:contentDescription="@string/picture_description" />
+                android:contentDescription="@string/picture_description"
+                android:background="#424242"
+                android:src="@mipmap/ic_notifications_black_48dp" />
 
             <ImageButton
                 android:layout_width="65dp"
                 android:layout_height="65dp"
                 android:id="@+id/locality_change_left_button"
-                android:contentDescription="@string/picture_description" />
+                android:contentDescription="@string/picture_description"
+                android:src="@mipmap/ic_chevron_left_black_48dp"
+                android:adjustViewBounds="false"
+                android:scaleType="centerCrop"
+                android:background="#424242" />
 
             <TextView
                 android:layout_width="150dp"
@@ -91,13 +98,18 @@
                 android:layout_width="65dp"
                 android:layout_height="65dp"
                 android:id="@+id/locality_change_right_button"
-                android:contentDescription="@string/picture_description" />
+                android:contentDescription="@string/picture_description"
+                android:scaleType="fitEnd"
+                android:background="#424242"
+                android:src="@mipmap/ic_chevron_right_black_48dp" />
 
             <ImageButton
                 android:layout_width="65dp"
                 android:layout_height="65dp"
                 android:id="@+id/menu_button"
-                android:contentDescription="@string/picture_description" />
+                android:contentDescription="@string/picture_description"
+                android:background="#424242"
+                android:src="@mipmap/ic_menu_black_48dp" />
 
         </LinearLayout>
 
