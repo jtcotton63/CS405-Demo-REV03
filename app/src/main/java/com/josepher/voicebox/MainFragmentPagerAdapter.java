@@ -22,7 +22,13 @@ public class MainFragmentPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        return PageFragment.newInstance(position + 1);
+        if(position == 0) {
+            return SummaryFragment.newInstance();
+        } else if(position == 1) {
+            return MoneyFragment.newInstance();
+        } else {
+            return StatusFragment.newInstance();
+        }
     }
 
     @Override
