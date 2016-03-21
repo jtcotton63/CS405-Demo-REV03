@@ -42,6 +42,38 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
+                android:layout_height="24sp"
+                android:layout_margin="5sp"
+                android:layout_marginBottom="10sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="3,451 In Favor"
+                    android:id="@+id/textView8"
+                    android:textColor="#64DD17"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="4 Not In Favor"
+                    android:id="@+id/textView9"
+                    android:textColor="#E65100"
+                    android:layout_gravity="center|right"
+                    android:layout_weight=".5"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:weightSum="1"
@@ -58,7 +90,10 @@
                         android:layout_width="65dp"
                         android:layout_height="65dp"
                         android:id="@+id/commentProfileImage"
-                        android:contentDescription="@string/picture_description" />
+                        android:contentDescription="@string/picture_description"
+                        android:src="@mipmap/jimmer"
+                        android:scaleType="fitXY"
+                        android:padding="0dp" />
 
                 </LinearLayout>
 
@@ -111,7 +146,10 @@
                         android:layout_width="65dp"
                         android:layout_height="65dp"
                         android:id="@+id/commentProfileImage2"
-                        android:contentDescription="@string/picture_description" />
+                        android:contentDescription="@string/picture_description"
+                        android:src="@mipmap/donald_duck"
+                        android:scaleType="fitXY"
+                        android:padding="0dp" />
 
                 </LinearLayout>
 

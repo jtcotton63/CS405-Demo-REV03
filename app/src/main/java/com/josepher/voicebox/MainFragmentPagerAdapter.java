@@ -27,7 +27,7 @@ public class MainFragmentPagerAdapter extends FragmentPagerAdapter {
         } else if(position == 1) {
             return MoneyFragment.newInstance();
         } else {
-            return StatusFragment.newInstance();
+            return HistoryFragment.newInstance();
         }
     }
 

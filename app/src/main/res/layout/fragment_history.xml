@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.josepher.voicebox.StatusFragment">
+    tools:context=".HistoryFragment">
 
     <LinearLayout
         android:orientation="vertical"
@@ -45,10 +45,13 @@
                 android:weightSum="1">
 
                 <ImageButton
-                    android:layout_width="65dp"
-                    android:layout_height="65dp"
+                    android:layout_width="65sp"
+                    android:layout_height="65sp"
                     android:id="@+id/creator_image"
-                    android:contentDescription="@string/picture_description" />
+                    android:contentDescription="@string/picture_description"
+                    android:src="@mipmap/pete_cat"
+                    android:scaleType="fitXY"
+                    android:padding="0dp" />
 
             </LinearLayout>
 
@@ -99,13 +102,17 @@
                 android:layout_width="65dp"
                 android:layout_height="match_parent"
                 android:foregroundGravity="fill_vertical"
-                android:weightSum="1" >
+                android:weightSum="1"
+                android:padding="0dp">
 
                 <ImageButton
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:id="@+id/imageButton"
-                    android:contentDescription="@string/picture_description" />
+                    android:contentDescription="@string/picture_description"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/social_event"
+                    android:padding="0dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -146,7 +153,10 @@
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:id="@+id/imageButton3"
-                    android:contentDescription="@string/picture_description" />
+                    android:contentDescription="@string/picture_description"
+                    android:src="@mipmap/p"
+                    android:padding="0dp"
+                    android:scaleType="fitXY" />
             </LinearLayout>
 
             <LinearLayout
@@ -159,7 +169,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="Official recognition gained"
+                    android:text="Officially recognized as city issue"
                     android:id="@+id/textView6"
                     android:gravity="center_vertical|center_horizontal" />
             </LinearLayout>
@@ -187,7 +197,10 @@
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:id="@+id/imageButton2"
-                    android:contentDescription="@string/picture_description" />
+                    android:contentDescription="@string/picture_description"
+                    android:src="@mipmap/puss_in_boots"
+                    android:padding="0dp"
+                    android:scaleType="fitXY" />
             </LinearLayout>
 
             <LinearLayout
@@ -207,7 +220,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="20dp"
                     android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="Somebody&apos;s Name, Provo Mayor"
+                    android:text="Puss I. Boots, Provo Mayor"
                     android:id="@+id/commenterName"
                     android:layout_gravity="center_horizontal"
                     android:minHeight="20dp"
@@ -253,7 +266,10 @@
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:id="@+id/imageButton4"
-                    android:contentDescription="@string/picture_description" />
+                    android:contentDescription="@string/picture_description"
+                    android:src="@mipmap/p"
+                    android:padding="0dp"
+                    android:scaleType="fitXY" />
             </LinearLayout>
 
             <LinearLayout

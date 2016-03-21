@@ -14,20 +14,20 @@ import android.widget.Button;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link StatusFragment.OnFragmentInteractionListener} interface
+ * {@link HistoryFragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link StatusFragment#newInstance} factory method to
+ * Use the {@link HistoryFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class StatusFragment extends Fragment {
+public class HistoryFragment extends Fragment {
     private OnFragmentInteractionListener mListener;
 
-    public StatusFragment() {
+    public HistoryFragment() {
         // Required empty public constructor
     }
 
-    public static StatusFragment newInstance() {
-        StatusFragment fragment = new StatusFragment();
+    public static HistoryFragment newInstance() {
+        HistoryFragment fragment = new HistoryFragment();
         return fragment;
     }
 
@@ -39,7 +39,7 @@ public class StatusFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_status, container, false);
+        View view = inflater.inflate(R.layout.fragment_history, container, false);
         Button createIdeaButton = (Button) view.findViewById(R.id.create_idea_button);
         createIdeaButton.setOnClickListener(new View.OnClickListener() {
             @Override
