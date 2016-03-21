@@ -9,18 +9,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
-
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link SummaryFragment.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link SummaryFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class SummaryFragment extends Fragment {
     private OnFragmentInteractionListener mListener;
+
+    private boolean expandedDescription = false;
 
     public SummaryFragment() {
         // Required empty public constructor
@@ -41,6 +35,21 @@ public class SummaryFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view =  inflater.inflate(R.layout.fragment_summary, container, false);
+
+        TextView ideaDescription = (TextView) view.findViewById(R.id.idea_description);
+        ideaDescription.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TextView tv = (TextView) v.findViewById(R.id.idea_description);
+                if(!expandedDescription) {
+                    tv.setLines(6);
+                } else {
+                    tv.setLines(3);
+                }
+                expandedDescription = !expandedDescription;
+            }
+        });
+
         Button createIdeaButton = (Button) view.findViewById(R.id.create_idea_button);
         createIdeaButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,6 +58,7 @@ public class SummaryFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
         return view;
     }
 

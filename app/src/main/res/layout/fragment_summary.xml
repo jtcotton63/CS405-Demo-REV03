@@ -24,7 +24,7 @@
                 android:id="@+id/idea_summary"
                 android:layout_gravity="center_horizontal"
                 android:textStyle="bold"
-                android:textSize="30sp"
+                android:textSize="25sp"
                 android:gravity="center_vertical|center_horizontal"
                 android:layout_margin="5sp" />
 
@@ -35,21 +35,9 @@
                 android:text="@string/pool_example_description"
                 android:id="@+id/idea_description"
                 android:layout_gravity="center_horizontal"
-                android:maxHeight="75dp"
                 android:layout_margin="5sp"
-                android:ellipsize="marquee"
+                android:ellipsize="end"
                 android:lines="3" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="@string/expand_description_icon"
-                android:id="@+id/expand_idea_description_button"
-                android:textStyle="bold"
-                android:gravity="center_vertical|fill_vertical|center_horizontal"
-                android:allowUndo="true"
-                android:padding="2dp" />
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -85,7 +73,9 @@
                         android:layout_height="50dp"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="@string/jimmers_comment"
-                        android:id="@+id/comment" />
+                        android:id="@+id/comment"
+                        android:ellipsize="end"
+                        android:clickable="true" />
 
                     <TextView
                         android:layout_width="fill_parent"
