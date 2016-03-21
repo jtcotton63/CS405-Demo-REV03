@@ -2,24 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.josepher.voicebox.MoneyFragment">
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:weightSum="1">
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="50sp"
-            android:text="@string/contribute_button"
-            android:id="@+id/general_action_button"
-            android:background="#0091EA"
-            android:layout_gravity="bottom" />
-
-    </LinearLayout>
+    tools:context="com.josepher.voicebox.MoneyFragment"
+    android:contextClickable="true">
 
     <LinearLayout
         android:orientation="vertical"
@@ -71,6 +55,23 @@
             </LinearLayout>
 
         </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:text="@string/contribute_button"
+            android:id="@+id/contribute_button"
+            android:background="#0091EA"
+            android:layout_gravity="bottom" />
 
     </LinearLayout>
 
