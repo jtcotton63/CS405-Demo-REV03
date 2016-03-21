@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.josepher.voicebox.RegisterActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/bottom_button_bar_height"
+        android:id="@+id/linearLayout4">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="First Name"
+            android:ems="10"
+            android:id="@+id/name_on_credit_card_input"
+            android:layout_marginTop="20sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Last Name"
+            android:ems="10"
+            android:id="@+id/editText4"
+            android:layout_marginTop="20sp"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Residence Address"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:layout_marginTop="20sp"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Residence City"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:layout_marginTop="20sp"
+            android:layout_gravity="center_horizontal" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/state_dropdown"
+            android:layout_gravity="right"
+            android:spinnerMode="dropdown"
+            android:layout_marginTop="20sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editText5"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20sp"
+            android:text="Residence Zip" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:layout_marginTop="20sp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Profile Picture"
+                android:id="@+id/add_profile_picture_button"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_weight=".1" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:weightSum="1"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:id="@+id/register_button"
+            android:background="#64DD17"
+            android:layout_gravity="bottom" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

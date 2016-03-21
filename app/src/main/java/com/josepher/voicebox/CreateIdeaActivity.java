@@ -27,12 +27,12 @@ public class CreateIdeaActivity extends AppCompatActivity {
         });
 
         // Populate university list
-        ArrayList universities = new ArrayList();
+        ArrayList<String> universities = new ArrayList();
         universities.add("Brigham Young University");
         universities.add("University of Utah");
         universities.add("Utah Valley University");
-        ArrayAdapter<String> universityAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, universities);
-        Spinner universityDropdown = (Spinner) findViewById(R.id.university_dropdown);
-        universityDropdown.setAdapter(universityAdapter);
+        ArrayAdapter<String> stateAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, universities);
+        Spinner universityDropdown = (Spinner) findViewById(R.id.state_dropdown);
+        universityDropdown.setAdapter(stateAdapter);
     }
 }

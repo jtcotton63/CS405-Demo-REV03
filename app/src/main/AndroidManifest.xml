@@ -27,7 +27,8 @@
         </activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".ContributeActivity" />
-        <activity android:name=".CreateIdeaActivity"></activity>
+        <activity android:name=".CreateIdeaActivity" />
+        <activity android:name=".RegisterActivity"></activity>
     </application>
 
 </manifest>
