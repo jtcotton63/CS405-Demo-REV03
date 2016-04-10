@@ -30,7 +30,8 @@
                 android:textSize="30sp"
                 android:gravity="center_vertical|center_horizontal"
                 android:layout_marginTop="20sp"
-                android:layout_marginBottom="20sp" />
+                android:layout_marginBottom="20sp"
+                android:textColor="@color/lightGrey" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -40,7 +41,8 @@
                 android:id="@+id/money_raised_display"
                 android:gravity="center_vertical|center_horizontal"
                 android:textStyle="bold"
-                android:textSize="80dp" />
+                android:textSize="80dp"
+                android:textColor="@color/lightGrey" />
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -61,16 +63,16 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/bottom_button_bar_height"
         android:layout_gravity="bottom"
         android:weightSum="1">
 
         <Button
             android:layout_width="match_parent"
-            android:layout_height="50sp"
+            android:layout_height="match_parent"
             android:text="@string/contribute_button"
             android:id="@+id/contribute_button"
-            android:background="#0091EA"
+            android:background="@color/mainBlue"
             android:layout_gravity="bottom" />
 
     </LinearLayout>

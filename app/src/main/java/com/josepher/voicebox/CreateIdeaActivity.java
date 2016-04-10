@@ -32,7 +32,7 @@ public class CreateIdeaActivity extends AppCompatActivity {
         universities.add("University of Utah");
         universities.add("Utah Valley University");
         ArrayAdapter<String> stateAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, universities);
-        Spinner universityDropdown = (Spinner) findViewById(R.id.state_dropdown);
+        Spinner universityDropdown = (Spinner) findViewById(R.id.university_dropdown);
         universityDropdown.setAdapter(stateAdapter);
     }
 }

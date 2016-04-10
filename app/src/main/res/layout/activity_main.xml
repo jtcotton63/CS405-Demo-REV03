@@ -32,34 +32,24 @@
                 android:background="#424242"
                 android:src="@mipmap/ic_notifications_black_48dp" />
 
-            <ImageButton
-                android:layout_width="65dp"
-                android:layout_height="65dp"
-                android:id="@+id/locality_change_left_button"
-                android:contentDescription="@string/picture_description"
-                android:src="@mipmap/ic_chevron_left_black_48dp"
-                android:adjustViewBounds="false"
-                android:scaleType="centerCrop"
-                android:background="#424242" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="150sp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5">
 
-            <TextView
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="City of Provo"
-                android:id="@+id/locality_title_view"
-                android:gravity="center_vertical|center_horizontal"
-                android:layout_gravity="center"
-                android:layout_weight=".5" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="City of Provo"
+                    android:id="@+id/locality_title_view"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:singleLine="false" />
 
-            <ImageButton
-                android:layout_width="65dp"
-                android:layout_height="65dp"
-                android:id="@+id/locality_change_right_button"
-                android:contentDescription="@string/picture_description"
-                android:scaleType="fitEnd"
-                android:background="#424242"
-                android:src="@mipmap/ic_chevron_right_black_48dp" />
+            </LinearLayout>
 
             <ImageButton
                 android:layout_width="65dp"
@@ -71,11 +61,6 @@
 
         </LinearLayout>
 
-        <ProgressBar
-            style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/progressBar" />
     </LinearLayout>
 
     <com.astuetz.PagerSlidingTabStrip

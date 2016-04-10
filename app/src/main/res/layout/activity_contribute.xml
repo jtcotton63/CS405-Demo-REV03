@@ -121,14 +121,14 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/bottom_button_bar_height"
         android:layout_gravity="bottom"
         android:weightSum="1"
         android:layout_alignParentBottom="true">
 
         <Button
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="@string/contribute_button"
             android:id="@+id/contribute_button"
             android:background="#0091EA"
