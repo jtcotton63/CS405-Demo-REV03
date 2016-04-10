@@ -28,7 +28,8 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".ContributeActivity" />
         <activity android:name=".CreateIdeaActivity" />
-        <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".HistoryActivity1" />
     </application>
 
 </manifest>

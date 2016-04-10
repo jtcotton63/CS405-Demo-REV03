@@ -96,7 +96,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/create_idea_button"
+            android:id="@+id/finish_button"
             android:background="@color/mainBlue"
             android:layout_gravity="bottom"
             android:text="Share your idea" />

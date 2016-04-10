@@ -68,7 +68,7 @@
         app:pstsShouldExpand="true"
         app:pstsTextAllCaps="true"
         android:layout_width="match_parent"
-        android:layout_height="40sp"
+        android:layout_height="5sp"
         android:textColor="#BDBDBD"
         app:pstsIndicatorColor="#0091EA"
         app:pstsIndicatorHeight="5sp"/>

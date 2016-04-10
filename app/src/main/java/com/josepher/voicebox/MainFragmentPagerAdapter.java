@@ -9,7 +9,7 @@ import android.support.v4.app.FragmentPagerAdapter;
  */
 public class MainFragmentPagerAdapter extends FragmentPagerAdapter {
     final int PAGE_COUNT = 3;
-    private String tabTitles[] = new String[] { "Summary", "$$$", "History" };
+    private String tabTitles[] = new String[] { "", "", "" };
 
     public MainFragmentPagerAdapter(FragmentManager fm) {
         super(fm);
@@ -23,11 +23,11 @@ public class MainFragmentPagerAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         if(position == 0) {
-            return SummaryFragment.newInstance();
+            return SummaryFragment1.newInstance();
         } else if(position == 1) {
-            return MoneyFragment.newInstance();
+            return SummaryFragment1.newInstance();
         } else {
-            return HistoryFragment.newInstance();
+            return SummaryFragment1.newInstance();
         }
     }
 

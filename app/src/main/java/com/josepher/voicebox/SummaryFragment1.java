@@ -9,38 +9,66 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
-
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link HistoryFragment.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link HistoryFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
-public class HistoryFragment extends Fragment {
+public class SummaryFragment1 extends Fragment {
     private OnFragmentInteractionListener mListener;
 
-    public HistoryFragment() {
+    private boolean expandedDescription = false;
+
+    public SummaryFragment1() {
         // Required empty public constructor
     }
 
-    public static HistoryFragment newInstance() {
-        HistoryFragment fragment = new HistoryFragment();
+    public static SummaryFragment1 newInstance() {
+        SummaryFragment1 fragment = new SummaryFragment1();
         return fragment;
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_history, container, false);
-        Button createIdeaButton = (Button) view.findViewById(R.id.create_idea_button);
+        View view =  inflater.inflate(R.layout.fragment_summary, container, false);
+
+        TextView ideaDescription = (TextView) view.findViewById(R.id.idea_description);
+        ideaDescription.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TextView tv = (TextView) v.findViewById(R.id.idea_description);
+                if(!expandedDescription) {
+                    tv.setLines(6);
+                } else {
+                    tv.setLines(3);
+                }
+                expandedDescription = !expandedDescription;
+            }
+        });
+
+        Button viewHistoryButton1 = (Button) view.findViewById(R.id.viewHistoryButton1);
+        viewHistoryButton1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), HistoryActivity1.class);
+                startActivity(intent);
+            }
+        });
+
+        Button contributeButton1 = (Button) view.findViewById(R.id.contributeButton1);
+        contributeButton1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), ContributeActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button createIdeaButton = (Button) view.findViewById(R.id.finish_button);
         createIdeaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -48,6 +76,7 @@ public class HistoryFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
         return view;
     }
 
