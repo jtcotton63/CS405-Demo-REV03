@@ -18,7 +18,9 @@
         android:theme="@style/VoiceBox">
         <activity
             android:name=".LoginActivity"
-            android:label="@string/app_name">
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,8 +30,8 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".ContributeActivity" />
         <activity android:name=".CreateIdeaActivity" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".HistoryActivity1" />
+        <activity android:name=".unused.RegisterActivity" />
+        <activity android:name=".ideaA.HistoryActivityA" />
     </application>
 
 </manifest>

@@ -1,4 +1,4 @@
-package com.josepher.voicebox;
+package com.josepher.voicebox.ideaA;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,17 +11,21 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class SummaryFragment1 extends Fragment {
+import com.josepher.voicebox.ContributeActivity;
+import com.josepher.voicebox.CreateIdeaActivity;
+import com.josepher.voicebox.R;
+
+public class SummaryFragmentA extends Fragment {
     private OnFragmentInteractionListener mListener;
 
     private boolean expandedDescription = false;
 
-    public SummaryFragment1() {
+    public SummaryFragmentA() {
         // Required empty public constructor
     }
 
-    public static SummaryFragment1 newInstance() {
-        SummaryFragment1 fragment = new SummaryFragment1();
+    public static SummaryFragmentA newInstance() {
+        SummaryFragmentA fragment = new SummaryFragmentA();
         return fragment;
     }
 
@@ -34,7 +38,7 @@ public class SummaryFragment1 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view =  inflater.inflate(R.layout.fragment_summary, container, false);
+        View view =  inflater.inflate(R.layout.a_fragment_summary1, container, false);
 
         TextView ideaDescription = (TextView) view.findViewById(R.id.idea_description);
         ideaDescription.setOnClickListener(new View.OnClickListener() {
@@ -54,7 +58,7 @@ public class SummaryFragment1 extends Fragment {
         viewHistoryButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), HistoryActivity1.class);
+                Intent intent = new Intent(getActivity(), HistoryActivityA.class);
                 startActivity(intent);
             }
         });

@@ -1,4 +1,4 @@
-package com.josepher.voicebox;
+package com.josepher.voicebox.unused;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +8,9 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 
+import com.josepher.voicebox.MainActivity;
+import com.josepher.voicebox.R;
+
 import java.util.ArrayList;
 
 public class RegisterActivity extends AppCompatActivity {
@@ -15,7 +18,7 @@ public class RegisterActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
+        setContentView(R.layout.unused_activity_register);
 
         ArrayList<String> states = new ArrayList();
         states.add("Alaska");

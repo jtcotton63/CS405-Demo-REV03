@@ -1,4 +1,4 @@
-package com.josepher.voicebox;
+package com.josepher.voicebox.unused;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,6 +9,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+
+import com.josepher.voicebox.ContributeActivity;
+import com.josepher.voicebox.R;
 
 
 /**
@@ -40,7 +43,7 @@ public class MoneyFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_money, container, false);
+        View view = inflater.inflate(R.layout.unused_fragment_money, container, false);
         Button contributeButton = (Button) view.findViewById(R.id.contribute_button);
         contributeButton.setOnClickListener(new View.OnClickListener() {
             @Override

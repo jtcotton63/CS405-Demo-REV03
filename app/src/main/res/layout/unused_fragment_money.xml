@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.josepher.voicebox.MoneyFragment"
+    tools:context=".unused.MoneyFragment"
     android:contextClickable="true">
 
     <LinearLayout
@@ -53,7 +53,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:id="@+id/imageView"
-                    android:src="@drawable/money_raised_over_time" />
+                    android:src="@mipmap/money_raised_over_time" />
             </LinearLayout>
 
         </LinearLayout>

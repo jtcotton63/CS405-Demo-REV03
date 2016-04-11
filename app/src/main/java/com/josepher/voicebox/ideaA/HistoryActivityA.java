@@ -1,4 +1,4 @@
-package com.josepher.voicebox;
+package com.josepher.voicebox.ideaA;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,27 +6,30 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-public class HistoryActivity1 extends AppCompatActivity {
+import com.josepher.voicebox.ContributeActivity;
+import com.josepher.voicebox.R;
 
-    public HistoryActivity1() {
+public class HistoryActivityA extends AppCompatActivity {
+
+    public HistoryActivityA() {
         // Required empty public constructor
     }
 
-    public static HistoryActivity1 newInstance() {
-        HistoryActivity1 fragment = new HistoryActivity1();
+    public static HistoryActivityA newInstance() {
+        HistoryActivityA fragment = new HistoryActivityA();
         return fragment;
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_history1);
+        setContentView(R.layout.a_activity_history1);
 
         Button finishedButton = (Button) findViewById(R.id.finish_button);
         finishedButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HistoryActivity1.this, ContributeActivity.class);
+                Intent intent = new Intent(HistoryActivityA.this, ContributeActivity.class);
                 startActivity(intent);
                 finish();
             }

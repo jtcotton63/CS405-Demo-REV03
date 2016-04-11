@@ -4,11 +4,13 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import com.josepher.voicebox.ideaA.SummaryFragmentA;
+
 /**
  * Created by Josepher on 3/18/2016.
  */
 public class MainFragmentPagerAdapter extends FragmentPagerAdapter {
-    final int PAGE_COUNT = 3;
+    final int PAGE_COUNT = 5;
     private String tabTitles[] = new String[] { "", "", "" };
 
     public MainFragmentPagerAdapter(FragmentManager fm) {
@@ -23,11 +25,11 @@ public class MainFragmentPagerAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         if(position == 0) {
-            return SummaryFragment1.newInstance();
+            return SummaryFragmentA.newInstance();
         } else if(position == 1) {
-            return SummaryFragment1.newInstance();
+            return SummaryFragmentA.newInstance();
         } else {
-            return SummaryFragment1.newInstance();
+            return SummaryFragmentA.newInstance();
         }
     }
 
