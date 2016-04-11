@@ -31,7 +31,7 @@
         <activity android:name=".ContributeActivity" />
         <activity android:name=".CreateIdeaActivity" />
         <activity android:name=".unused.RegisterActivity" />
-        <activity android:name=".ideaA.HistoryActivityA" />
+        <activity android:name=".ideaPool.HistoryActivityPool" />
     </application>
 
 </manifest>

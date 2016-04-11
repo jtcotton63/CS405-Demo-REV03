@@ -28,4 +28,5 @@
     <string name="plus_one">+1</string>
     <string name="share_button">Share an idea</string>
     <string name="contribute_button">Contribute to this cause</string>
+    <string name="add_comment_button_label">Add a Comment</string>
 </resources>

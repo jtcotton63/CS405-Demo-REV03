@@ -4,14 +4,15 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import com.josepher.voicebox.ideaA.SummaryFragmentA;
+import com.josepher.voicebox.ideaPool.SummaryFragmentPool;
+import com.josepher.voicebox.ideaCats.SummaryFragmentCats;
+import com.josepher.voicebox.issueLibrary.SummaryFragmentLibrary;
 
 /**
  * Created by Josepher on 3/18/2016.
  */
 public class MainFragmentPagerAdapter extends FragmentPagerAdapter {
-    final int PAGE_COUNT = 5;
-    private String tabTitles[] = new String[] { "", "", "" };
+    final int PAGE_COUNT = 3;
 
     public MainFragmentPagerAdapter(FragmentManager fm) {
         super(fm);
@@ -25,17 +26,16 @@ public class MainFragmentPagerAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         if(position == 0) {
-            return SummaryFragmentA.newInstance();
+            return SummaryFragmentPool.newInstance();
         } else if(position == 1) {
-            return SummaryFragmentA.newInstance();
+            return SummaryFragmentCats.newInstance();
         } else {
-            return SummaryFragmentA.newInstance();
+            return SummaryFragmentLibrary.newInstance();
         }
     }
 
     @Override
     public CharSequence getPageTitle(int position) {
-        // Generate title based on item position
-        return tabTitles[position];
+        return "";
     }
 }
