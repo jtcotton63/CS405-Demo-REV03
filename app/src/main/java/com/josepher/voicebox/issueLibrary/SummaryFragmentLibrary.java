@@ -37,18 +37,6 @@ public class SummaryFragmentLibrary extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view =  inflater.inflate(R.layout.library_fragment_summary, container, false);
-
-        TextView ideaDescription = (TextView) view.findViewById(R.id.idea_description);
-
-        Button createIdeaButton = (Button) view.findViewById(R.id.finish_button);
-        createIdeaButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), CreateIdeaActivity.class);
-                startActivity(intent);
-            }
-        });
-
         return view;
     }
 

@@ -39,7 +39,7 @@ public class SummaryFragmentTeachers extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view =  inflater.inflate(R.layout.pool_fragment_summary, container, false);
+        View view =  inflater.inflate(R.layout.teachers_fragment_summary, container, false);
 
         TextView ideaDescription = (TextView) view.findViewById(R.id.idea_description);
         ideaDescription.setOnClickListener(new View.OnClickListener() {
@@ -47,38 +47,11 @@ public class SummaryFragmentTeachers extends Fragment {
             public void onClick(View v) {
                 TextView tv = (TextView) v.findViewById(R.id.idea_description);
                 if(!expandedDescription) {
-                    tv.setLines(12);
+                    tv.setLines(13);
                 } else {
                     tv.setLines(3);
                 }
                 expandedDescription = !expandedDescription;
-            }
-        });
-
-        Button viewHistoryButton1 = (Button) view.findViewById(R.id.viewHistoryButton1);
-        viewHistoryButton1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), HistoryActivityPool.class);
-                startActivity(intent);
-            }
-        });
-
-        Button contributeButton1 = (Button) view.findViewById(R.id.contributeButton1);
-        contributeButton1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), ContributeActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        Button createIdeaButton = (Button) view.findViewById(R.id.finish_button);
-        createIdeaButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), CreateIdeaActivity.class);
-                startActivity(intent);
             }
         });
 

@@ -4,9 +4,11 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import com.josepher.voicebox.ideaIGR.SummaryFragmentIGR;
 import com.josepher.voicebox.ideaPool.SummaryFragmentPool;
 import com.josepher.voicebox.ideaCats.SummaryFragmentCats;
 import com.josepher.voicebox.ideaTeachers.SummaryFragmentTeachers;
+import com.josepher.voicebox.ideaTime.SummaryFragmentTime;
 import com.josepher.voicebox.issueLibrary.SummaryFragmentLibrary;
 
 /**
@@ -33,9 +35,9 @@ public class MainFragmentPagerAdapter extends FragmentPagerAdapter {
         } else if(position == 3) {
             return SummaryFragmentTeachers.newInstance();
         } else if(position == 4) {
-            return SummaryFragmentPool.newInstance();
+            return SummaryFragmentIGR.newInstance();
         } else if(position == 5) {
-            return SummaryFragmentPool.newInstance();
+            return SummaryFragmentTime.newInstance();
         } else {
             return SummaryFragmentPool.newInstance();
         }

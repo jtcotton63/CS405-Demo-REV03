@@ -55,32 +55,6 @@ public class SummaryFragmentCats extends Fragment {
             }
         });
 
-        Button viewHistoryButton1 = (Button) view.findViewById(R.id.viewHistoryButton1);
-        viewHistoryButton1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-
-        Button contributeButton1 = (Button) view.findViewById(R.id.contributeButton1);
-        contributeButton1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), ContributeActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        Button createIdeaButton = (Button) view.findViewById(R.id.finish_button);
-        createIdeaButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), CreateIdeaActivity.class);
-                startActivity(intent);
-            }
-        });
-
         return view;
     }
 

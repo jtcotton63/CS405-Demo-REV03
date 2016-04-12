@@ -81,35 +81,4 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="@dimen/bottom_button_bar_height"
-        android:layout_gravity="bottom">
-
-        <ImageButton
-            android:layout_width="@dimen/ifo_button_width"
-            android:layout_height="match_parent"
-            android:id="@+id/in_favor_button"
-            android:src="@mipmap/in_favor_of_button_image"
-            android:scaleType="fitXY"
-            android:padding="0dp" />
-
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:text="@string/share_button"
-            android:id="@+id/finish_button"
-            android:layout_weight="1.14"
-            android:background="@color/buttonGrey" />
-
-        <ImageButton
-            android:layout_width="@dimen/ifo_button_width"
-            android:layout_height="match_parent"
-            android:id="@+id/not_in_favor_button"
-            android:src="@mipmap/not_in_favor_of_button_image"
-            android:scaleType="fitXY"
-            android:padding="0dp" />
-    </LinearLayout>
-
 </FrameLayout>
