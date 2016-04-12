@@ -52,21 +52,27 @@ public class MainActivity extends AppCompatActivity {
                 switch(position) {
                     case 1:
                         setLocalityTitle("City of Provo");
+                        contributeButton.setText("$0");
                         break;
                     case 2:
                         setLocalityTitle("City of Provo");
+                        contributeButton.setText("$0");
                         break;
                     case 3:
                         setLocalityTitle("State of Utah");
+                        contributeButton.setText("$0");
                         break;
                     case 4:
                         setLocalityTitle("United States of America");
+                        contributeButton.setText("$521,450");
                         break;
                     case 5:
                         setLocalityTitle("United States of America");
+                        contributeButton.setText("$0");
                         break;
                     default:
                         setLocalityTitle("City of Provo");
+                        contributeButton.setText("$0");
                         break;
                 }
             }

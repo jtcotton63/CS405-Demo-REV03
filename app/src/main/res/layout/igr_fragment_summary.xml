@@ -2,8 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ideaPool.SummaryFragmentPool"
-    android:background="@color/officialGreen">
+    tools:context=".ideaPool.SummaryFragmentPool">
 
     <LinearLayout
         android:orientation="vertical"
@@ -21,7 +20,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="A City Official recently voted on an issue"
+                android:text="Help refugees learn to speak English"
                 android:id="@+id/idea_summary"
                 android:layout_gravity="center_horizontal"
                 android:textStyle="bold"
@@ -33,12 +32,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Thousands of refugees already in the US are in need of help. Coming from many different backgrounds and cultures, many of them are lost and need the skills to survive in the USA. Our classes include English basics and are structured so that many people from a variety of different backgrounds can all learn at the same time. In addition, our English classes focus on tasks they will need to perform in daily life, such as buy food at the grocery store or show off their skills for a job. This allows them to become independent as soon as possible. Your valuable contribution could make the difference in the lives of many people."
                 android:id="@+id/idea_description"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="5sp"
                 android:ellipsize="end"
-                android:lines="2"
-                android:text="Mayor Puss I. Boots recently voted to fund a an expansion of the Provo library." />
+                android:lines="3" />
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -51,7 +50,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="18,054 In Favor"
+                    android:text="30,451,564 In Favor"
                     android:id="@+id/textView8"
                     android:textColor="@color/accentGreen"
                     android:layout_gravity="center"
@@ -63,7 +62,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="238 Not In Favor"
+                    android:text="48,964,587 Not In Favor"
                     android:id="@+id/textView9"
                     android:textColor="@color/accentRed"
                     android:layout_gravity="center|right"
@@ -76,7 +75,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/add_comment_button_label"
-                android:id="@+id/button" />
+                android:id="@+id/comment_button" />
+
         </LinearLayout>
 
     </LinearLayout>

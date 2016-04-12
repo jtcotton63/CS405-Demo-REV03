@@ -17,7 +17,7 @@ public class ContributeActivity extends AppCompatActivity {
         createIdeaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                (Toast.makeText(getApplicationContext(), "Thank you for your contribution!", Toast.LENGTH_SHORT)).show();
+                (Toast.makeText(getApplicationContext(), "Thank you for your contribution.", Toast.LENGTH_SHORT)).show();
                 finish();
             }
         });
