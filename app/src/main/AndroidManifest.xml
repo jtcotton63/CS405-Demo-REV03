@@ -32,6 +32,7 @@
         <activity android:name=".CreateIdeaActivity" />
         <activity android:name=".unused.RegisterActivity" />
         <activity android:name=".ideaPool.HistoryActivityPool" />
+        <activity android:name=".electedOfficialsPortal.ElectedOfficialsPortalActivity" />
     </application>
 
 </manifest>

@@ -57,7 +57,8 @@
                     android:maxLines="1"
                     android:singleLine="true"
                     android:textColor="@color/lightGrey"
-                    style="@color/mainBlue" />
+                    style="@color/mainBlue"
+                    android:text="john.doe@gmail.com" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -76,7 +77,8 @@
                     android:inputType="textPassword"
                     android:maxLines="1"
                     android:singleLine="true"
-                    android:textColor="@color/lightGrey" />
+                    android:textColor="@color/lightGrey"
+                    android:text="password" />
 
             </android.support.design.widget.TextInputLayout>
 

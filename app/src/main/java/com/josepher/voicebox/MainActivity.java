@@ -11,6 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.astuetz.PagerSlidingTabStrip;
+import com.josepher.voicebox.electedOfficialsPortal.ElectedOfficialsPortalActivity;
 import com.josepher.voicebox.ideaPool.HistoryActivityPool;
 
 public class MainActivity extends AppCompatActivity {
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     ImageButton inFavorOfButton;
     ImageButton notInFavorOfButton;
     Button shareIdeaButton;
+    ImageButton menuButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -124,6 +126,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, CreateIdeaActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        menuButton = (ImageButton) findViewById(R.id.menu_button);
+        menuButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ElectedOfficialsPortalActivity.class);
                 startActivity(intent);
             }
         });
